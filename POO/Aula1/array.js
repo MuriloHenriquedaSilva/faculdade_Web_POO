@@ -1,5 +1,6 @@
 import promptsync from 'prompt-sync';
 const prompt = promptsync({sigint: true});
+import { validate } from "bycontract";
 
 /*let idades = [];
 let terminou = false;
@@ -28,6 +29,7 @@ console.log("Quantidade de colegas com", iddFreq, "anos:", freq);
 console.log("Quantidade de colegas com idade maior que", iddFreq, ":", maiores);*/
 
 function randomInt(min, max) {
+    validate(arguments,["Number","Number"])
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -36,6 +38,7 @@ function arranjoToString(dados) {
 }
 
 function multNeg(lista) {
+    validate(lista,"Number[]")
     for (let i = 0; i < lista.length; i++) {
         if (lista[i] < 0) {
             lista[i] *= -2; // Multiplica por -2 e atribui o resultado de volta ao elemento do array
@@ -44,14 +47,27 @@ function multNeg(lista) {
     return lista;
 }
 
-function menor(lista) {
-    let menor = lista[0];
-    for (let i = 1; i < lista.length; i++) {
-        if (menor > lista[i]) {
-            menor = lista[i];
+function maiorMenor(lista,maior) {
+    validate(arguments,["Number[]",'boolean'])
+    let resp = lista[0];
+    if (maior == true){
+        let menor = lista[0];
+        for (let i = 1; i < lista.length; i++) {
+            if (resp < lista[i]) {
+                resp = lista[i];
         }
     }
-    return menor;
+}
+    else{
+        let menor = lista[0];
+        for (let i = 1; i < lista.length; i++) {
+            if (resp > lista[i]) {
+                resp = lista[i];
+        }
+    }
+    }
+    
+    return resp;
 }
 
 let nros = new Array(100);
@@ -61,5 +77,5 @@ for (let i = 0; i < 100; i++) {
 
 console.log("Array original:", arranjoToString(nros));
 console.log("Array com números negativos multiplicados por -2:", arranjoToString(multNeg(nros)));
-console.log("Menor valor do array:", menor(nros));
+console.log("Maior valor do array:", maiorMenor(nros,true));
 
