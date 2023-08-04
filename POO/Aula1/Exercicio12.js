@@ -22,5 +22,11 @@ let custoTotal = despesaComSuco + despesaComSanduiche;
 console.log("\n")
 console.log("Recibo: ")
 console.log("Suco: R$",valorSuco.toFixed(2),"quantidade: ",qtdadeSuco.toFixed(2),"X","Total: R$",despesaComSuco.toFixed(2))
+if(qtdadeSuco>10){
+    console.log("Foi aplicado um desconto no suco")
+}
 console.log("Sanduiche: R$",valorSanduiche.toFixed(2),"Quantidade: ",qtdadeSanduiches.toFixed(2),"X","Total R$",despesaComSanduiche)
+if(qtdadeSanduiches>10){
+    console.log("Foi aplicado um desconto no sanduiche")
+}
 console.log("Total a pagar: R$ ",custoTotal.toFixed(2))
