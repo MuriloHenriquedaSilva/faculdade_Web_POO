@@ -1,6 +1,6 @@
-import promptsync from 'prompt-sync';
-const prompt = promptsync({sigint: true});
-//npm install prompt-sync - todo projeto novo
+import promptsync from 'prompt-sync'; //npm install prompt-sync - todo projeto novo
+const prompt = promptsync({sigint: true});//npm install bycontract
+
 
 
 const notamin = 7.0;
