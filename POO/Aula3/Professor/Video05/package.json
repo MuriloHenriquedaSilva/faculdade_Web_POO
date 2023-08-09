@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "video05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "D11_ObjLiteralPassagens.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bycontract": "^2.0.11"
+  }
+}
