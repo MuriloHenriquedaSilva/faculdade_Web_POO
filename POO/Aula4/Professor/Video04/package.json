@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "video04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Ex1_VacinasArquivos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bycontract": "^2.0.11",
+    "n-readlines": "^1.0.1"
+  }
+}
