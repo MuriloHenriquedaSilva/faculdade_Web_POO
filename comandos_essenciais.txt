@@ -1,0 +1,8 @@
+npm init --yes
+package.json > "type": "module",
+
+npm install prompt-sync
+import promptsync from 'prompt-sync';
+const prompt = promptsync({sigint: true});
+ npm install bycontract
+import { validate } from "bycontract";

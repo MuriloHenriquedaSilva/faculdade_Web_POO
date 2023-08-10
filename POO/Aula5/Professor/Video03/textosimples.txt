@@ -1,0 +1,20 @@
+The basic idea is that you keep everything - and I mean
+everything - in one big text file. My text file contains lists
+of things to do, reference material (phone numbers, 
+people's birthdays, summaries of books that I've found 
+informative), notes from all the meetings that I attend and 
+work-in-progress (blog entries, wiki pages, documents, and 
+particularly long or complex emails).
+My text file is now coming up on ten thousand lines in size. 
+This sounds large and unmanageable but it is still little more 
+than 300K in size - much smaller than the average PowerPoint 
+presentation file we routinely send round attached to emails. 
+And any modern, good quality text editor - a Vi or EMACS for 
+example - is able to handle files much, much bigger than this 
+without any loss of performance. At some point I will have to 
+move some of the stuff into some kind of separate archival 
+file. However I don't yet feel anywhere close to that point 
+just yet. I definitely feel that the file could grow by at 
+least another order of magnitude before I'd have to consider 
+doing this (which should mean that it's at least five years 
+before I have to do anything).

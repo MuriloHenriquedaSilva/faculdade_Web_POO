@@ -10,7 +10,6 @@ console.log(dt.zoneName);
 console.log(dt.offset);       
 console.log(dt.daysInMonth);  
 console.log(dt.toLocaleString());   
-//dt.plus({ hours: 3, minutes: 2 });
+dt = dt.plus({ hours: 3, minutes: 2 }); // Reassign the modified value
 let aux = dt.minus({ days: 7 });
-console.log(aux.toLocaleString());   
-
+console.log(aux.toLocaleString());
